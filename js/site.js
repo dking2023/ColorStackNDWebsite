@@ -2,8 +2,8 @@
    You should not need to edit this file to update the roster —
    edit js/members.js instead. */
 
-// ----- Mobile navigation toggle -----
 document.addEventListener("DOMContentLoaded", function () {
+  // ----- Mobile navigation toggle -----
   var toggle = document.querySelector(".nav-toggle");
   var links = document.querySelector(".nav-links");
   if (toggle && links) {
@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
   }
+
+  // ----- Render rosters FIRST, so the reveal animation below can see
+  //       the member cards it creates. (Order matters here.) -----
+  renderRoster("board-roster", typeof BOARD_MEMBERS !== "undefined" ? BOARD_MEMBERS : []);
+  renderRoster("general-roster", typeof GENERAL_MEMBERS !== "undefined" ? GENERAL_MEMBERS : []);
+
+  var yearEls = document.querySelectorAll("[data-board-year]");
+  if (typeof BOARD_YEAR !== "undefined") {
+    yearEls.forEach(function (el) { el.textContent = BOARD_YEAR; });
+  }
+
+  var copyright = document.querySelector("[data-copyright-year]");
+  if (copyright) copyright.textContent = new Date().getFullYear();
 
   // ----- Scroll reveal (respects reduced motion via CSS) -----
   var revealed = document.querySelectorAll(".reveal");
@@ -31,18 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     revealed.forEach(function (el) { el.classList.add("in"); });
   }
-
-  // ----- Render rosters if this page has one -----
-  renderRoster("board-roster", typeof BOARD_MEMBERS !== "undefined" ? BOARD_MEMBERS : []);
-  renderRoster("general-roster", typeof GENERAL_MEMBERS !== "undefined" ? GENERAL_MEMBERS : []);
-
-  var yearEls = document.querySelectorAll("[data-board-year]");
-  if (typeof BOARD_YEAR !== "undefined") {
-    yearEls.forEach(function (el) { el.textContent = BOARD_YEAR; });
-  }
-
-  var copyright = document.querySelector("[data-copyright-year]");
-  if (copyright) copyright.textContent = new Date().getFullYear();
 });
 
 // ----- Roster rendering -----
