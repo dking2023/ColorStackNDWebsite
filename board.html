@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Board — ColorStack at Notre Dame</title>
+  <meta name="description" content="Meet the 2026–27 executive board of ColorStack at Notre Dame." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="images/colorstack-logo.png" alt="ColorStack logo" />
+        <span class="brand-sub">at Notre&nbsp;Dame</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="board.html" aria-current="page">Our Board</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="https://www.colorstack.org/member-application-requirements" target="_blank" rel="noopener">Join ColorStack</a></li>
+      </ul>
+    </div>
+    <div class="stack-bar" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="hero" style="padding: 64px 0 68px;">
+      <div class="container">
+        <p class="eyebrow"><span data-board-year>2026–27</span> Executive Board</p>
+        <h1 style="max-width: 15em;">The people running the <span class="accent-word">stack</span> this year.</h1>
+        <p class="lede">
+          Ten students keeping the chapter moving — planning events, managing
+          partnerships, mentoring members, and making sure everyone has a seat.
+          Reach out to any of us directly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Board roster -->
+    <section class="block">
+      <div class="container">
+        <div id="board-roster" class="roster-grid"><!-- Rendered from js/members.js --></div>
+      </div>
+    </section>
+
+    <!-- General members -->
+    <section class="block tint">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" style="color: var(--nd-green);">Members</p>
+          <h2>Our member family</h2>
+          <p>Every ColorStack ND member, coming soon. Are you a member and want your name, year, and photo here? Email our Communication Chair.</p>
+        </div>
+        <div id="general-roster" class="roster-grid"><!-- Rendered from js/members.js --></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Want to be on this page?</h2>
+        <p>Join ColorStack, come to a meeting, and get involved. Board applications open every spring.</p>
+        <div class="btn-row" style="justify-content: center;">
+          <a class="btn btn-gold" href="https://www.colorstack.org/member-application-requirements" target="_blank" rel="noopener">Become a member</a>
+          <a class="btn btn-ghost" href="contact.html">Contact the board</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="stack-bar" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <h4>ColorStack at Notre Dame</h4>
+          <p style="max-width: 30em;">Helping Black, Indigenous, and Latinx computing students at the University of Notre Dame build community and launch rewarding technical careers.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="board.html">Our Board</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>ColorStack</h4>
+          <ul>
+            <li><a href="https://www.colorstack.org" target="_blank" rel="noopener">National organization</a></li>
+            <li><a href="https://www.colorstack.org/member-application-requirements" target="_blank" rel="noopener">Membership requirements</a></li>
+            <li><a href="https://www.instagram.com/colorstacknd/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/colorstacknd" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-copyright-year>2026</span> ColorStack at Notre Dame</span>
+        <span>Student chapter of <a href="https://www.colorstack.org" target="_blank" rel="noopener" style="color: var(--nd-gold-bright);">ColorStack</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/members.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
