@@ -43,7 +43,7 @@ const BOARD_MEMBERS = [
     email: "aineza@nd.edu",
     year: "2029",
     major: "Computer Engineering",
-    photo: "",
+    photo: "images/michaella-ineza.jpeg",
   },
   {
     name: "Kaiden Johnnie",
@@ -75,7 +75,7 @@ const BOARD_MEMBERS = [
     email: "rballines@nd.edu",
     year: "2027",
     major: "Computer Science",
-    photo: "",
+    photo: "images/raul-ballines.jpeg",
   },
   {
     name: "Chidera Onyia",
