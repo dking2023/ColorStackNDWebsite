@@ -51,7 +51,7 @@ const BOARD_MEMBERS = [
     email: "kjohnnie@nd.edu",
     year: "2028",
     major: "Computer Engineering",
-    photo: "",
+    photo: "images/kaiden-johnnie.PNG",
   },
   {
     name: "Catrell Conley",
@@ -59,7 +59,7 @@ const BOARD_MEMBERS = [
     email: "cconley4@nd.edu",
     year: "2029",
     major: "Computer Science",
-    photo: "",
+    photo: "images/catrell-conley.jpg",
   },
   {
     name: "Biruk Molla",
@@ -67,7 +67,7 @@ const BOARD_MEMBERS = [
     email: "bmolla@nd.edu",
     year: "2027",
     major: "Computer Science",
-    photo: "",
+    photo: "images/biruk-molla.jpeg",
   },
   {
     name: "Raul Ballines",
@@ -99,7 +99,7 @@ const BOARD_MEMBERS = [
     email: "dking24@nd.edu",
     year: "2027",
     major: "Computer Science",
-    photo: "",
+    photo: "images/daylon-king.jpg",
   },
 ];
 
